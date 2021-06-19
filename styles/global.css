@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-background: #FAF6F1; 
+    --color-primary-lighter: #FFF5F4;
+    --color-primary-light: #FFF4F3;
+    --color-primary: #EFD6D3;
+    --color-primary-dark: #CCA6A1;
+    --color-primary-darker: #AC7A73;
+    --color-secondary: #1A1460;
+    --color-secondary-dark: #2D2B43;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #686593;
+    --color-text-title: #32264D; 
+    --color-text-complement: #686593;
+    --color-text-base: #1A1460;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100vh;
+}
+
+body {
+    background: var(--color-background);
+    display: flex;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+body,
+input,
+button,
+textarea {
+    font-weight: 500;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    color: var(--color-text-base);
+}
+
+#container {
+    width: 90vw;
+    max-width: 700px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 70.5%; /* todo 1rem vai ser relativo a 10px */
+    }
+}
+
+.icon-color {
+    color: #E8CCC9;
+}
+
+.bag-color {
+    color: #AC7A73;
+    transition: color 200ms ease-in;
+}
+
+.bag-color:hover {
+    color: #b1938f;
+}
+
+.hr-color {
+    border: 1px solid #CCA6A1;
+}
+
+.form-ayla {
+    border: 0;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.btn-ayla {
+    font-size: 16px;
+    border: 0;
+}
+
+.form-div-ayla {
+    border: 1px solid #CFCFCF;
+    border-radius: 12px;
+}
+
+.card-ayla {
+    background-color: #FFFAF4;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.bg-success {
+    background: #87FFBE!important;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.btn-adquirir {
+    background-color: #2D2B43;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btn-adquirir:hover {
+    background-color: rgb(65, 49, 100);
+    color: white;
+}
